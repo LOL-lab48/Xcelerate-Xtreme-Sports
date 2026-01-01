@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Xcelerate Xtreme</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- Header -->
 <header>
   <div class="logo">Xcelerate Xtreme</div>
   <p class="tagline">Push your limits with Xcelerate Xtreme</p>
@@ -22,14 +24,17 @@
   </nav>
 </header>
 
+<!-- Membership -->
 <section class="membership">
   <a href="https://forms.gle/juCtML81FsE3HVUa7" target="_blank" class="membership-btn">
     Become a Member and Get Special Stuff!!! Click Me!
   </a>
 </section>
 
+<!-- Main Content -->
 <section class="main-content">
 
+  <!-- Daily Challenges -->
   <div class="daily-challenges">
     <h2>Challenge of the Day</h2>
     <div class="challenge-list">
@@ -38,9 +43,35 @@
         <p>Send your video to Gabe.karekinian@gmail.com</p>
         <a href="https://codepen.io/LOL12356/full/GgZGEmr" target="_blank" class="btn">Join</a>
       </div>
+      <div class="challenge">
+        <h3>Skate Grab Trick</h3>
+        <p>Send your video to Gabe.karekinian@gmail.com</p>
+        <a href="https://codepen.io/LOL12356/full/wBGXeqP" target="_blank" class="btn">Join</a>
+      </div>
+      <div class="challenge">
+        <h3>Mini Ramp Challenge</h3>
+        <p>Send your video to Gabe.karekinian@gmail.com</p>
+        <a href="https://codepen.io/LOL12356/full/raeKwwR" target="_blank" class="btn">Join</a>
+      </div>
+      <div class="challenge">
+        <h3>Double Pump Jump</h3>
+        <p>Send your video to Gabe.karekinian@gmail.com</p>
+        <a href="https://codepen.io/LOL12356/full/ByKVZdw" target="_blank" class="btn">Join</a>
+      </div>
+      <div class="challenge">
+        <h3>Tailwhip Challenge</h3>
+        <p>Send your video to Gabe.karekinian@gmail.com</p>
+        <a href="https://codepen.io/LOL12356/full/OPNEgjj" target="_blank" class="btn">Join</a>
+      </div>
+      <div class="challenge">
+        <h3>Xcelerate Xtreme Kart Challenge</h3>
+        <p>Bring your helmet & $5 cash to race!</p>
+        <a href="https://codepen.io/LOL12356/full/yyOEbNV" target="_blank" class="btn">Join</a>
+      </div>
     </div>
   </div>
 
+  <!-- Mini Arcade -->
   <div class="arcade">
     <h2>Mini Arcade</h2>
     <div class="arcade-tabs">
@@ -48,17 +79,82 @@
       <button onclick="showArcadeTab('tictactoe')">Tic Tac Toe</button>
       <button onclick="showArcadeTab('2048')">2048</button>
       <button onclick="showArcadeTab('reaction')">Reaction Time</button>
+      <button onclick="showArcadeTab('weather')">Weather</button>
     </div>
-    <div id="arcade-container">Select a game</div>
+    <div id="arcade-container"></div>
+  </div>
+
+  <!-- Extra Sections -->
+  <div class="section-box" id="proTips">
+    <h2>Pro Tips for Advanced Riders</h2>
+    <ul>
+      <li>Always check your landing zone before attempting tricks.</li>
+      <li>Warm up and stretch to prevent injuries.</li>
+      <li>Use visual cues to time flips and grabs accurately.</li>
+    </ul>
+  </div>
+
+  <div class="section-box" id="progression">
+    <h2>Challenge Progression</h2>
+    <table>
+      <tr><th>Level</th><th>BMX Backflip</th><th>Skate Grab</th></tr>
+      <tr><td>Beginner</td><td>Basic ramp jump</td><td>Ollie grab</td></tr>
+      <tr><td>Intermediate</td><td>180° backflip</td><td>Kickflip grab</td></tr>
+      <tr><td>Advanced</td><td>Full backflip with rotation</td><td>360° grab combo</td></tr>
+    </table>
+  </div>
+
+  <div class="section-box" id="gearTips">
+    <h2>Gear Maintenance Tips</h2>
+    <ul>
+      <li>Lubricate your bike chain regularly.</li>
+      <li>Check screws and bolts on skateboards before riding.</li>
+      <li>Replace worn pads and gloves immediately.</li>
+    </ul>
+  </div>
+
+  <div class="section-box" id="recommendedSetup">
+    <h2>Recommended Setup</h2>
+    <table>
+      <tr><th>Item</th><th>Brand/Type</th></tr>
+      <tr><td>Bike</td><td>MountainX Pro</td></tr>
+      <tr><td>Skateboard</td><td>SkateXtreme Deck</td></tr>
+      <tr><td>Shoes</td><td>GripMax</td></tr>
+      <tr><td>Helmet</td><td>SafeRide</td></tr>
+      <tr><td>Pads</td><td>ProProtect</td></tr>
+      <tr><td>Gloves</td><td>RideTough</td></tr>
+    </table>
+  </div>
+
+  <div class="section-box" id="safetyChecklist">
+    <h2>Safety Checklist</h2>
+    <ul>
+      <li>Helmet on and fastened</li>
+      <li>Knee and elbow pads secured</li>
+      <li>Gloves worn</li>
+      <li>Check equipment condition</li>
+      <li>Warm up properly</li>
+    </ul>
   </div>
 
 </section>
 
+<!-- Sponsors -->
+<section class="sponsors">
+  <h2>Our Sponsors</h2>
+  <div class="sponsor-list">
+    <div class="sponsor">Sponsors Coming Soon! Email Gabe.karekinian@gmail.com</div>
+  </div>
+</section>
+
+<!-- Footer -->
 <footer>
-  <p>⚠️ All challenges are at your own risk.</p>
-  <p>© 2025 Xcelerate Xtreme. All rights reserved.</p>
+  <p>⚠️ All challenges are at your own risk. Organizers are not responsible for injuries or damages.</p>
+  <p>© 2025 Xcelerate Xtreme. Code may not be copied or sold without permission. By using this website you agree to the T's & C's.</p>
 </footer>
 
-<script src="./script.js" defer></script>
+<!-- Scripts -->
+<script src="script.js" defer></script>
+
 </body>
 </html>
