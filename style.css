@@ -1,0 +1,74 @@
+/* =========================
+   Global Styles
+========================= */
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Arial', sans-serif; }
+body { background-color:#000; color:#00ff00; line-height:1.6; padding:10px; }
+a { text-decoration:none; transition:0.3s; }
+h1,h2,h3,p { margin:10px 0; }
+
+/* Header */
+header { text-align:center; padding:20px 0; border-bottom:2px solid #00ff00; }
+.logo { font-size:3rem; font-weight:bold; text-shadow:0 0 20px #00ff00; animation:glow 1.5s infinite alternate; }
+@keyframes glow { 0% { text-shadow:0 0 10px #00ff00; } 100% { text-shadow:0 0 35px #00ff00; } }
+nav { display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-top:10px; }
+nav a { color:#00ff00; padding:8px 12px; border:2px solid #00ff00; border-radius:5px; font-size:0.9rem; text-align:center; }
+nav a:hover { background:#00ff00; color:#000; }
+
+/* Membership */
+.membership { text-align:center; margin:20px 0; }
+.membership-btn { font-size:1.5rem; padding:12px 25px; border:3px solid #00ff00; border-radius:15px; color:#00ff00; background:#000; box-shadow:0 0 20px #00ff00; }
+.membership-btn:hover { background:#00ff00; color:#000; }
+
+/* Main Content Layout */
+.main-content { display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+.daily-challenges, .arcade { background:rgba(0,255,0,0.05); border:2px solid #00ff00; border-radius:10px; padding:15px; }
+.daily-challenges { flex:2 1 600px; }
+.arcade { flex:1 1 350px; min-width:300px; }
+
+/* Daily Challenges */
+.challenge-list { display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:10px; }
+.challenge { background:rgba(0,255,0,0.05); border:2px solid #00ff00; border-radius:10px; padding:10px; display:flex; flex-direction:column; justify-content:space-between; transition:0.3s; }
+.challenge:hover { transform:scale(1.05); box-shadow:0 0 20px #00ff00; }
+
+/* Arcade */
+.arcade-tabs { display:flex; flex-wrap:wrap; gap:5px; margin-bottom:10px; }
+.arcade-tabs button { flex:1; padding:8px; border:2px solid #00ff00; background:#000; color:#00ff00; cursor:pointer; border-radius:5px; font-size:0.9rem; }
+.arcade-tabs button:hover { background:#00ff00; color:#000; }
+#arcade-container { min-height:350px; background:#000; border:2px solid #00ff00; padding:10px; border-radius:10px; overflow:auto; display:flex; justify-content:center; align-items:center; }
+
+/* Game Boxes */
+.game-box { border:3px solid #00ff00; padding:10px; background:#000; border-radius:10px; margin-bottom:20px; width:100%; display:flex; flex-direction:column; align-items:center; }
+#snakeCanvas { border:4px solid #00ff00; background:#000; border-radius:5px; }
+#tttBoard { display:grid; grid-template-columns:repeat(3,1fr); grid-gap:5px; width:200px; margin:0 auto; }
+.tttCell { width:60px; height:60px; font-size:2rem; cursor:pointer; border-radius:5px; background:#000; color:#00ff00; border:2px solid #00ff00; display:flex; justify-content:center; align-items:center; transition:0.3s; }
+.tttCell:hover { background:#00ff00; color:#000; }
+#game2048 { display:grid; grid-template-columns:repeat(4,1fr); gap:6px; width:260px; margin:auto; }
+.gridCell { height:60px; background:#000; border:2px solid #00ff00; border-radius:5px; color:#00ff00; font-size:1.4rem; display:flex; justify-content:center; align-items:center; transition:0.2s; }
+#reactionBox { width:100%; height:150px; border:3px solid #00ff00; border-radius:10px; background:#000; display:flex; justify-content:center; align-items:center; color:#00ff00; font-size:1.2rem; text-align:center; cursor:pointer; margin-bottom:10px; }
+#reactionBox:active { background:#00ff00; color:#000; }
+
+/* Extra Sections */
+.section-box { border:2px solid #00ff00; padding:15px; border-radius:10px; margin:15px 0; }
+.section-box h2 { margin-bottom:10px; }
+table { width:100%; border-collapse:collapse; table-layout:fixed; }
+table, th, td { border:1px solid #00ff00; word-wrap:break-word; }
+th, td { padding:8px; text-align:center; }
+ul { list-style:none; padding-left:10px; }
+ul li::before { content:"✔️ "; }
+
+/* Sponsors & Footer */
+.sponsors { text-align:center; margin:20px 0; }
+.sponsor-list { display:flex; justify-content:center; gap:15px; flex-wrap:wrap; }
+.sponsor { padding:10px 20px; border:2px solid #00ff00; border-radius:10px; box-shadow:0 0 20px #00ff00; }
+footer { text-align:center; padding:15px; border-top:2px solid #00ff00; }
+
+/* Buttons */
+.btn { color:#00ff00; border:2px solid #00ff00; padding:5px 10px; display:inline-block; margin-top:5px; border-radius:5px; }
+.btn:hover { background:#00ff00; color:#000; }
+
+/* Responsiveness */
+@media (max-width:1024px){
+  .main-content { flex-direction:column; align-items:center; }
+  .daily-challenges, .arcade { width:100%; }
+  .challenge-list { grid-template-columns:1fr; }
+}
