@@ -139,7 +139,7 @@ function initTicTacToe() {
   function aiMove() {
     const empty = cells.map((c,i)=>c===null?i:null).filter(v=>v!==null);
     if(!empty.length) return;
-    const choice = empty[Math.floor(Math.random()*empty.length)];
+    const choice = empty[Math.floor(Math.random() * empty.length)];
     cells[choice] = ai;
   }
 
